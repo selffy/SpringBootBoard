@@ -1,0 +1,45 @@
+*{
+	font-family: 'Nanum Gothic', sans-serif;	
+}
+
+#wrapper{
+	width:1000px;
+	height: 500px;
+}
+
+#content{
+	display:table-cell;
+	vertical-align: middle;
+}
+
+#content table{
+	border-style:solid;
+	border-color:gray;
+	width:100%;
+	
+}
+
+#content table th{
+	 background-color: #F2F2F2;
+}
+
+#content table td{
+}
+
+.alignLeft{
+	text-align: left;
+}
+
+.alignCenter{
+	text-align: center;
+}
+
+.aLink{
+	text-align: center;
+	justify-content: center;
+}
+
+.textarea{
+	width:99%;
+	border-style: hidden;
+}
