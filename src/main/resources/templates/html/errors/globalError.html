@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<link rel="stylesheet" th:href="@{/css/error.css}"/>
+<body>
+	<div id="wrapper">
+		<div id="title">
+			<h1><span class="exceptionfont">Exception 발생</span></h1>
+			<a th:href="@{/}">메인 화면으로 돌아가기</a>
+		</div>
+		<div id="content">
+			<table>
+				<tr>
+					<th>예외 메세지 : [[${exception.message}]]</th>
+				</tr>
+				<tr class="errorMessage" th:each="trace : ${exception.stackTrace}">
+					<td th:text="${trace}"/>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

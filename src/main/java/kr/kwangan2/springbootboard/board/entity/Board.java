@@ -22,6 +22,13 @@ public class Board {
 		this.createDate=createDate;
 		this.cnt=cnt;
 	}
+	
+	public Board(String title,String writer,String content,Date createDate) {
+		this.title=title;
+		this.writer=writer;
+		this.content=content;
+		this.createDate=createDate;
+	}
 	private String title;
 	
 	@Id @GeneratedValue

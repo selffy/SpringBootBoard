@@ -43,3 +43,9 @@
 	width:99%;
 	border-style: hidden;
 }
+
+.button{
+	width:80%;
+	display: flex;
+	justify-content: space-between;
+}

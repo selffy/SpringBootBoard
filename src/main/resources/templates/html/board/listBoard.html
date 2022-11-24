@@ -8,6 +8,7 @@
 <div id="wrapper" >
    <div id="title">
       <h1>게시글 목록</h1>
+      <h3><font color="gray" th:text="${session['member'].name}"></font>님 게시판 입장을 환영합니다.</h3>
    </div>
    <div id="content" class="listBoard" >
       <table>
@@ -35,8 +36,9 @@
          </tr>      
       </table>
    </div>
-   <div>
+   <div class="button">
       <a th:href="@{/board/insertBoard}">새글 등록</a>
+      <a th:href="@{/member/logout}">로그아웃</a>
    </div>
 </div>
 </body>

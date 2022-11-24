@@ -41,7 +41,8 @@
 		</form>
 	</div>
 <a th:href="@{/board/insertBoard}">등록</a>&nbsp;&nbsp;&nbsp;
-<a th:href="@{/board/deleteBoard(seq=${board.seq})}">삭제</a>&nbsp;&nbsp;&nbsp;
+<a	th:if="${session['member'].role == 'ROLE_ADMIN'}" 
+	th:href="@{/board/deleteBoard(seq=${board.seq})}">삭제</a>&nbsp;&nbsp;&nbsp;
 <a th:href="@{/board/listBoard}">목록</a>
 </div>
 </body>

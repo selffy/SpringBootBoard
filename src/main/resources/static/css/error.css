@@ -1,0 +1,23 @@
+#title{
+	text-align: center;
+}
+
+#content{
+	display:flex;
+	justify-content: center;
+}
+
+.errorMessage{
+	text-align:center;
+	border-style: solid;
+	color:#848484;
+}
+
+.exceptionfont{
+	color:green;
+}
+
+#content table th{
+	color:red;
+	background-color: #F2F2F2;
+}

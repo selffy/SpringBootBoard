@@ -2,16 +2,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="/css/board.css">
 <title>메인페이지</title>
 </head>
 <body>
-<div>
-	<div>
-		<h3>게시판 프로그램입니다</h3>
+<div id="wrapper">
+	<div id="title" class="alignCenter">
+		<h3 class="alignCenter">게시판 프로그램입니다</h3>
 	</div>
-	<div>
-		<button onclick="location.href='/board/listBoard'">목록</button>
-		<button onclick="'location.href='login'">로그인</button>
+	<div class="alignCenter">
+		<button class="alignCenter" onclick="location.href='/board/listBoard'">목록</button>
+		<button class="alignCenter" onclick="location.href='/member/login'">로그인</button>
+	</div>
+	<br/>
+	<div class="alignCenter">
+		<a href="boardError">BoardException 발생</a><br/>
+		<a href="illegalArgumentError">illegalArgumentException 발생</a><br/>
+		<a href="sqlError">SQLException 발생</a>
 	</div>
 </div>
 </body>
